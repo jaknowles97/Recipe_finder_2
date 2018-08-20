@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What's for Dinner?</title>
+</head>
+<body>
+    <header>
+        <h1>What's for Dinner</h1>
+    </header>
+
+    <form class="search">
+        <label for="search-input">Name of dish</label>
+        <input type="text">
+
+        <label for="time">time to cook:</label>
+        <input type="text"><span>:</span><input type="text">
+
+        <label for="exclude">Exclude ingredients</label>
+        <input type="text">
+        <button type="submit">More filters</button>
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="google-maps">
+        <iframe id = "map"
+        width="300"
+        height="300"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBG5a2EUHZpq-aoy20slw4V_TpzY2ZqIMc&q=my+location">
+        </iframe>
+        <form action="/" class="zip">
+            <label for="zip-code">Zip Code:</label>
+            <input type="text">
+            <button type="submit">locate</button>
+        </form>
+    </div>
+
+    <section class="results">
+        <!-- Results get dynamically added  -->
+    </section>
+
+    <footer>
+        <h5>&copysr; John A. Knowles</h5>
+    </footer>
+</body>
+</html>
